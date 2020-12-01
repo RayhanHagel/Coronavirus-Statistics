@@ -3,10 +3,10 @@
 
 
 ## How To Use?
--   ```**covid.get_total()**``` <br />
+-   **covid.get_total()** <br />
 Gives the coronavirus global scope data <br />
 
--   ```**covid.get_country({_Country-Name_})**``` <br />
+-   **covid.get_country({_Country-Name_})** <br />
 Gives the coronavirus stats in the specified country <br />
 
 ###### Where is the data from?
