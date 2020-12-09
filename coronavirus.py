@@ -1,7 +1,7 @@
 # Covid Statistics Parser by @Hageru-Ray
 
 
-import requests
+from requests import get
 from bs4 import BeautifulSoup as bs4
 
 
@@ -31,7 +31,7 @@ class Coronavirus:
     def get_data(self, url):
         print(self.fetching)
         
-        fetch = requests.get(url)
+        fetch = get(url)
         self.data = bs4(fetch.content, 'html.parser')
         self.get_status()
         
@@ -76,4 +76,4 @@ class Coronavirus:
 covid = Coronavirus()
 
 # Example
-covid.get_country('US')
+covid.get_country('Indonesia')
